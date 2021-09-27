@@ -1,0 +1,22 @@
+.sidebar__chatRow{
+    display: flex;
+    align-items: center;
+    /* background-color:red; */
+    border-bottom: 1px solid #aaa;
+    gap: 1em;
+    padding: 1em;
+    gap: 1em;
+}
+.sidebar__chatRow:hover{
+    background: #147efb;
+    color: #FFF;
+}
+.sidebar__chatInfo{
+    position: relative;
+    flex: 1;
+}
+.sidebar__chatInfo small{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

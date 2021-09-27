@@ -1,0 +1,45 @@
+.sidebar{
+    flex: 0.35;
+    background: rgba(211, 211, 211, .9);
+    /* height: 100%; */
+    /* opacity: .6; */
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__header{
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 1em;
+    gap: 1em;
+}
+.sidebar__headerInput{
+    padding: .3em;
+    background: #aaa;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: .7em;
+}
+.sidebar__headerInput > input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline-width: none;
+}
+.sidebar__createChat > ion-icon{
+    color: #000000;
+    font-size: 1.15rem;
+    background: #FFF;
+    padding: .2em;
+    cursor: pointer;
+}
+.sidebar__chats{
+    flex: 1;
+    overflow: auto;
+    /* background: green; */
+}
+
+/* .sidebar__chatInfo > p{
+    color: #aaa;
+} */
