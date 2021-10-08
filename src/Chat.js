@@ -28,14 +28,18 @@ const Chat = () => {
     const sendiMessage = (e) => {
         e.preventDefault()
 
-        db.collection('chats').doc(chatId).collection('messages').add({
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            message: input,
-            uid: user.uid, 
-            email: user.email,
-            photo: user.photo,
-            displayName: user.displayName
-        })
+        if(input != ""){
+            db.collection('chats').doc(chatId).collection('messages').add({
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                message: input,
+                uid: user.uid, 
+                email: user.email,
+                photo: user.photo,
+                displayName: user.displayName
+            })
+
+            setInput("")
+        }
     }
     return ( 
         <main className="chat">
